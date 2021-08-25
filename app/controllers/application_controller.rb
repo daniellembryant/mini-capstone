@@ -5,4 +5,8 @@ class ApplicationController < ActionController::API
     render json: all_products
     
   end
+  def product_method
+    product = Product.find(2)
+    render json: product
+  end
 end
