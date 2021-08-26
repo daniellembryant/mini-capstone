@@ -1,12 +1,12 @@
 class ApplicationController < ActionController::API
 
   def products_method
-    all_products = Product.all
-    render json: all_products
+    products = Product.all
+    render json: products.as_json
     
   end
-  def product_method
+  def first_product_method
     product = Product.find(2)
-    render json: product
+    render json: product.as_json
   end
 end

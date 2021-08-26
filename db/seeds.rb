@@ -6,5 +6,5 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-product = Product.new(name: "CD:Continuum", price: 10.99, image_url: "https://images-na.ssl-images-amazon.com/images/I/31udT0tc08L.jpg", description: "John Mayer cd")
+product = Product.new(name: "Rainbow", price: 10.99, image_url: "https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Mariah_Carey_Rainbow.png/220px-Mariah_Carey_Rainbow.png", description: "The Carters cd")
 product.save
