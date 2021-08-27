@@ -1,6 +1,6 @@
 Get http://localhost:3000/products
 ###
-GET http://localhost:3000/products/3
+GET http://localhost:3000/products/6
 ###
 POST http://localhost:3000/products
 Content-Type: application/json
@@ -12,9 +12,12 @@ Content-Type: application/json
   "description": "J.Cole cd"
 }
 ###
-PATCH http://localhost:3000/products/4
+PATCH http://localhost:3000/products/6
 Content-Type: application/json
 
 {
-  "description" : "Mariah Carey cd"
+  "name" : "J.cole"
 }
+
+###
+DELETE http://localhost:3000/products/2

@@ -32,4 +32,10 @@ class ApplicationController < ActionController::API
     render json: product.as_json
   end
 
+  def destroy
+    product = Product.find(params[:id])
+    product.destroy
+    render json: {message: "Your product has been destroyed."}
+  end
+
 end
