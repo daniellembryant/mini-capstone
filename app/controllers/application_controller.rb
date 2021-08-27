@@ -4,7 +4,6 @@ class ApplicationController < ActionController::API
   def index
     products = Product.all
     render json: products.as_json
-    
   end
 
   def create
@@ -15,14 +14,22 @@ class ApplicationController < ActionController::API
     description: params[:description]
   )
     product.save
-    render json: product.as_json
-    
+    render json: product.as_json 
   end
  
   def show
     product = Product.find(params[:id])
     render json: product.as_json
-     
+  end
+
+  def update
+    product = Product.find(params[:id])
+    product.name = params[:name] || product.name
+    product.price = params[:price] || product.price
+    product.image_url = params[:image_url] || product.image_url
+    product.description = params[:description] || product.description
+    product.save
+    render json: product.as_json
   end
 
 end

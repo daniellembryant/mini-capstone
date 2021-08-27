@@ -10,5 +10,11 @@ Content-Type: application/json
   "price": 10,
   "image_url" : "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/J_Cole_Born_Sinner1.jpg/220px-J_Cole_Born_Sinner1.jpg",
   "description": "J.Cole cd"
-  
+}
+###
+PATCH http://localhost:3000/products/4
+Content-Type: application/json
+
+{
+  "description" : "Mariah Carey cd"
 }
