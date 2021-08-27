@@ -1,0 +1,14 @@
+Get http://localhost:3000/products
+###
+GET http://localhost:3000/products/3
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name" : "Born Sinner",
+  "price": 10,
+  "image_url" : "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/J_Cole_Born_Sinner1.jpg/220px-J_Cole_Born_Sinner1.jpg",
+  "description": "J.Cole cd"
+  
+}
