@@ -3,7 +3,7 @@ class ApplicationController < ActionController::API
 
   def index
     products = Product.all
-    render json: products.as_json
+    render json: products
   end
 
   def create
@@ -14,7 +14,7 @@ class ApplicationController < ActionController::API
     description: params[:description]
   )
     product.save
-    render json: product.as_json 
+    render json: product
   end
  
   def show
@@ -29,7 +29,7 @@ class ApplicationController < ActionController::API
     product.image_url = params[:image_url] || product.image_url
     product.description = params[:description] || product.description
     product.save
-    render json: product.as_json
+    render json: product
   end
 
   def destroy
