@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-
+ #instance method/ model method
   def is_discounted?
     price < 10
   end  
