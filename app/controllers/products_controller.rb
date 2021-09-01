@@ -28,6 +28,7 @@ class ProductsController < ApplicationController
     product.image_url = params[:image_url] || product.image_url
     product.description = params[:description] || product.description
     product.inventory = params[:inventory] || product.inventory
+    product.supplier_id = params[:supplier_id] || product.supplier_id
     product.save
     render json: product
   end
