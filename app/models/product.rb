@@ -1,4 +1,11 @@
 class Product < ApplicationRecord
+
+ # association method
+  def supplier_id
+    Supplier.find(supplier_id)
+
+  end
+ 
  #instance method/ model method
   def is_discounted?
     price < 10
