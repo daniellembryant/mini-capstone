@@ -1,14 +1,14 @@
 class Product < ApplicationRecord
 
- # association method
-
+ # association methods
   belongs_to :supplier
-  # def supplier_id
+ # def supplier_id
   #   Supplier.find(supplier_id)
-
   # end
+
+  has_many :images
+
   
- 
  #instance method/ model method
   def is_discounted?
     price < 10
