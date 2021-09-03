@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
       price: params[:price],
       description: params[:description],
       inventory: params[:inventory],
+      supplier_id: params[:supplier_id]
     )
     if product.save
       render json: product
@@ -32,7 +33,7 @@ class ProductsController < ApplicationController
     if product.save
       render json: product
     else
-      render json: product.errors.full_messages, status: :unprocessable_entity
+      render json: {errors: product.errors.full_messages}
     end
   end
 
