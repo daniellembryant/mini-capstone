@@ -12,7 +12,7 @@ class Product < ApplicationRecord
  #instance method/ model method
   def is_discounted?
     price < 10
-  end  
+  end
 
   def tax
     price * 0.09

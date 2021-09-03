@@ -12,10 +12,16 @@ Product.create!([
 ])
 Image.create!([
   {url: "https://upload.wikimedia.org/wikipedia/en/f/f9/Destiny%27s_Child_%E2%80%93_The_Writing%27s_on_the_Wall.jpg",  product_id: 1},
+
   {url: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e6/Janetperiod1993.png/220px-Janetperiod1993.png", product_id: 2},
+
   {url: "https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Mariah_Carey_Rainbow.png/220px-Mariah_Carey_Rainbow.png", product_id: 3},
+
   {url: "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/J_Cole_Born_Sinner1.jpg/220px-J_Cole_Born_Sinner1.jpg", product_id: 4},
+
   {url: "https://upload.wikimedia.org/wikipedia/en/b/be/Maroon_5_-_Songs_About_Jane.png", product_id: 5},
+
   {url: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3d/The_Carters_-_Everything_Is_Love_%28Official_Album_Cover%29.png/220px-The_Carters_-_Everything_Is_Love_%28Official_Album_Cover%29.png", product_id: 6},
+  
   {url: "https://variety.com/wp-content/uploads/2018/06/beyonce-jay-z-apeshit-video.jpg", product_id: 6}
 ])
