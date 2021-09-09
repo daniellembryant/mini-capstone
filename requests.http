@@ -1,5 +1,9 @@
+### Index
 Get http://localhost:3000/products
-###
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzEyOTk4ODh9.0CTyltAJzqH_KUT_FuZUb6nvcjn46thLQFZbOPJazqI
+Content-Type: application/json
+
+### Show
 GET http://localhost:3000/products/6
 ###
 POST http://localhost:3000/products
@@ -21,3 +25,23 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/products/2
+
+### users create (signup)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name" :"Johnny Doe",
+  "email": "JD@gmail.com",
+  "password": "password",
+  "password_confirmation" : "password"
+}
+
+### sessions create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email" : "JD@gmail.com", 
+  "password": "password"
+}
