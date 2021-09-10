@@ -45,3 +45,25 @@ Content-Type: application/json
   "email" : "JD@gmail.com", 
   "password": "password"
 }
+
+### orders create
+POST http://localhost:3000/orders
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzEzODgzNTF9.-Z-Xp7JswmBloZtHzAKv9Wszyl66TStBVfKqZ7R2q0c
+
+
+{
+  
+  "product_id" : 1, 
+  "quantity": 1,
+  "subtotal" : 7.99, 
+  "tax": 0.99,
+  "total" : 9.00
+
+}
+
+###orders show 
+GET http://localhost:3000/orders/1
+
+###orders index
+GET http://localhost:3000/orders

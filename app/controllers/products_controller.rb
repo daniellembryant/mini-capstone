@@ -15,7 +15,8 @@ class ProductsController < ApplicationController
       price: params[:price],
       description: params[:description],
       inventory: params[:inventory],
-      supplier_id: params[:supplier_id]
+      supplier_id: params[:supplier_id],
+      user_id: current_user.id
     )
     if product.save
       render json: product
