@@ -1,11 +1,11 @@
-### Index
-Get http://localhost:3000/products
+### product Index
+GET  http://localhost:3000/products
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzEyOTk4ODh9.0CTyltAJzqH_KUT_FuZUb6nvcjn46thLQFZbOPJazqI
 Content-Type: application/json
 
-### Show
+### Product Show
 GET http://localhost:3000/products/6
-###
+### Product Create
 POST http://localhost:3000/products
 Content-Type: application/json
 
@@ -15,7 +15,7 @@ Content-Type: application/json
   "image_url" : "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/J_Cole_Born_Sinner1.jpg/220px-J_Cole_Born_Sinner1.jpg",
   "description": "J.Cole cd"
 }
-###
+### Product Update
 PATCH http://localhost:3000/products/3
 Content-Type: application/json
 
@@ -23,7 +23,7 @@ Content-Type: application/json
   "supplier_id" : "2"
 }
 
-###
+### Product Delete
 DELETE http://localhost:3000/products/2
 
 ### users create (signup)
@@ -31,8 +31,8 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name" :"Johnny Doe",
-  "email": "JD@gmail.com",
+  "name" :"Jane Smith",
+  "email": "J_S@gmail.com",
   "password": "password",
   "password_confirmation" : "password"
 }
@@ -49,9 +49,8 @@ Content-Type: application/json
 ### orders create
 POST http://localhost:3000/orders
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzEzODgzNTF9.-Z-Xp7JswmBloZtHzAKv9Wszyl66TStBVfKqZ7R2q0c
 
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzE0OTA1ODd9.hpK9_EXZx1wDMMgMnGZcexpXMNAdb4p2SmZpS17gMKo
 {
   
   "product_id" : 1, 
@@ -64,6 +63,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzEzODgzN
 
 ###orders show 
 GET http://localhost:3000/orders/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzE0OTEwNDJ9.WHPh4g4U7kCgDyeR3OStQe1bOcE_n7XC9S5l7CyW1FA
 
 ###orders index
 GET http://localhost:3000/orders
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzE0OTM2ODV9.Te8PRnD3jHjO1qHh1PiBcyRRIrBkonF76hD_5h3QTyw
