@@ -1,4 +1,7 @@
 class OrdersController < ApplicationController
+
+  before_action :authenticate_user
+
   def create
     order = Order.new(
       user_id: current_user.id,
@@ -17,33 +20,19 @@ class OrdersController < ApplicationController
     else
       render json: order.errors.full_messages, status: :unprocessable_entity
     end
-    
-      
-  
   end
 
   def show
-    if current_user
-      order = Order.find(params[:id])
-      if order.user_id ==        current_user.id
-        render json: order
-      else
-        render json: {message: "That is not your order!"}, status: 401
-      end
+    order = Order.find(params[:id])
+    if order.user_id == current_user.id
+      render json: order
     else
-      render json: {message: "You must be logged in to view your order"}
+      render json: {message: "That is not your order!"}, status: 401
     end
-      
   end
 
   def index
-    if current_user
-      orders = Order.all
-      render json: orders
-    else
-      render json: {message: "You must be logged in to see your orders."}
-
-    end
-    
+    orders = current_user.orders
+    render json: orders
   end
 end
