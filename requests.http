@@ -2,9 +2,10 @@
 @hostname = http://localhost:3000
 
 ### product Index
-GET {{hostname}}/products
+GET {{hostname}}/products?category=Pop
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
+
 
 ### Product Show
 GET {{hostname}}/products/6
