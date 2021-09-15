@@ -33,11 +33,21 @@
 #   {url: "https://variety.com/wp-content/uploads/2018/06/beyonce-jay-z-apeshit-video.jpg", product_id: 6}
 # ])
 
-ProductCategory.create!([
-  {product_id: 1, category_id: 1},
-  {product_id: 5, category_id: 4},
-  {product_id: 3, category_id:1},
-  {product_id: 2, category_id:1},
-  {product_id: 6, category_id:3},
-  {product_id: 4, category_id:3},
+# ProductCategory.create!([
+#   {product_id: 1, category_id: 1},
+#   {product_id: 5, category_id: 4},
+#   {product_id: 3, category_id:1},
+#   {product_id: 2, category_id:1},
+#   {product_id: 6, category_id:3},
+#   {product_id: 4, category_id:3},
+# ])
+
+# CartedProduct.create!([
+#   {user_id: 1, product_id: 4, quantity: 1, status: "purchased"},
+#   {user_id: 2, product_id: 5, quantity: 1, status: "carted"},
+#   {user_id: 2, product_id: 2, quantity: 2, status: "carted"}
+# ])
+
+Order.create!([
+  {user_id: 1, subtotal: 9.01 , tax: 0.99, total: 10} 
 ])
