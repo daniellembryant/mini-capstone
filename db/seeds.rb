@@ -48,6 +48,6 @@
 #   {user_id: 2, product_id: 2, quantity: 2, status: "carted"}
 # ])
 
-Order.create!([
-  {user_id: 1, subtotal: 9.01 , tax: 0.99, total: 10} 
-])
+# Order.create!([
+#   {user_id: 1, subtotal: 9.01 , tax: 0.99, total: 10} 
+# ])
