@@ -49,5 +49,10 @@
 # ])
 
 # Order.create!([
-#   {user_id: 1, subtotal: 9.01 , tax: 0.99, total: 10} 
+#   # {user_id: 1, subtotal: 9.01 , tax: 0.99, total: 10},
+#   {user_id: 2, subtotal: 11.01 , tax: 0.99, total: 12},
+#   {user_id: 2, subtotal: 10.01 , tax: 0.99, total: 11},
+#   {user_id: 2, subtotal: 9.01 , tax: 0.99, total: 10},
+#   {user_id: 2, subtotal: 11.01 , tax: 0.99, total: 12},
+#   {user_id: 2, subtotal: 8.01 , tax: 0.99, total: 9}
 # ])

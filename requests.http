@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzE4OTg1MTd9.WQJORXI2bEidzPxyqXFs0YDy5oyGiweezUs2lgBXPm4
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzIwODMzNzJ9.v8UQ7DZBsH_AvGWFzrtHSDcL1V674bW4dQV6U5opPKc
 @hostname = http://localhost:3000
 
 ### product Index
@@ -54,24 +54,21 @@ Content-Type: application/json
 ### orders create
 POST {{hostname}}/orders
 Content-Type: application/json
-
 Authorization: Bearer {{jwt}}
-{
-  
-  
-  "subtotal" : 7.99, 
-  "tax": 0.99,
-  "total" : 9.00
 
-}
 
 ###orders show 
-GET {{hostname}}/orders/1
+GET {{hostname}}/orders/5
 Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 ###orders index
 GET {{hostname}}/orders
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+### carted-products index
+GET {{hostname}}/carted_products
 Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
@@ -81,15 +78,11 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-   
-  "product_id" : 1 ,
-  "quantity":  1,
-  
-  "order_id" : "nil"
+  "product_id" : 4,
+  "quantity":  1
 }
-### carted-products index
-GET {{hostname}}/carted_products
+
+### carted_products update/destroy
+PATCH {{hostname}}/carted_products/7
 Content-Type: application/json
 Authorization: Bearer {{jwt}}
-
-### carted_products update
