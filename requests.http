@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzIwODMzNzJ9.v8UQ7DZBsH_AvGWFzrtHSDcL1V674bW4dQV6U5opPKc
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzQ0MTY0Njh9.6GmHheeg5JJYc-_Nwqh8YFY54JGpqFPd2UxHtsxsm8M
 @hostname = http://localhost:3000
 
 ### product Index
@@ -14,10 +14,10 @@ POST {{hostname}}/products
 Content-Type: application/json
 
 {
-  "name" : "Born Sinner",
-  "price": 10,
-  "image_url" : "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/J_Cole_Born_Sinner1.jpg/220px-J_Cole_Born_Sinner1.jpg",
-  "description": "J.Cole cd"
+  "name" : "Toni Braxton",
+  "price": 8,
+  "image_url" : "https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Toni_Braxton_%28album%29.png/220px-Toni_Braxton_%28album%29.png",
+  "description": "Toni Braxton cd"
 }
 ### Product Update
 PATCH {{hostname}}/products/3
@@ -47,7 +47,7 @@ POST {{hostname}}/sessions
 Content-Type: application/json
 
 {
-  "email" : "J_S@gmail.com", 
+  "email" : "JD@gmail.com", 
   "password": "password"
 }
 
